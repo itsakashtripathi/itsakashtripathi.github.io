@@ -192,6 +192,16 @@ nav {
   box-shadow: var(--box-shadow);
 }
 
+nav > a > span {
+  display: inline-block;
+  margin-left: 55px;
+  transform: translateY(-26px);
+}
+
+.custom-nav-height {
+  height: 30px;
+}
+
 /* end navigation */
 
 /* Banner Area */
@@ -631,6 +641,19 @@ footer.footer-area .social a:hover > i {
 /* card container end */
 
 /*avatar container start */
+.nav-avatar-container {
+  background-image: url(/icons/man.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 35px;
+  width: 35px;
+  margin-top: -10px;
+  background-color: #4857dd21;
+  border-radius: 6px;
+  box-shadow: rgb(0 0 0 / 10%) 10px 5px 20px 0em;
+  border: 2px solid white;
+}
+
 .avatar-container {
   background-image: url("/icons/man.svg");
   background-repeat: no-repeat;
