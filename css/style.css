@@ -642,7 +642,7 @@ footer.footer-area .social a:hover > i {
 
 /*avatar container start */
 .nav-avatar-container {
-  background-image: url(/icons/man.svg);
+  background-image: url("/icons/nav-man.svg");
   background-repeat: no-repeat;
   background-position: center;
   height: 35px;
