@@ -219,7 +219,7 @@ nav > a > span {
   content: " ";
   height: 2px;
   width: 18vw;
-  background: black;
+  background: #0000001f;
   display: inline-block;
   margin-left: 5%;
   transform: translateY(-10px);
