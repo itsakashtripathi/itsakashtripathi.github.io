@@ -294,6 +294,10 @@ nav > a > span {
   filter: brightness(0.15);
 }
 
+.site-main .brand-area .first-row .col-lg-4 a > .empty-brand {
+  padding-top: 0.8rem;
+}
+
 .site-main .brand-area .experience-area {
   padding-left: 1rem;
 }
