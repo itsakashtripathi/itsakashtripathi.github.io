@@ -846,3 +846,20 @@ footer.footer-area .social a:hover > i {
   padding: 2px 8px;
   width: 88px; */
 }
+
+/* confetti code start */
+#my-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10000;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#my-canvas.active {
+  visibility: visible;
+}
+/* confetti code end */

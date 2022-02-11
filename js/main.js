@@ -166,6 +166,18 @@ progress_bar.forEach(bar => {
         // selector.classList.add('magictime', 'swap-back');
     });
     
+    // confetti start
+    var confettiSettings = { target: 'my-canvas' };
+    var confetti = new ConfettiGenerator(confettiSettings);
+    confetti.render();
+
+    let confe = document.querySelector("#my-canvas");
+    let hireMeBtn = document.querySelector(".hire-btn");
+    hireMeBtn.onclick = function () {
+        confe.classList.add('active');
+        setTimeout(() => {confe.classList.remove('active');}, 10000);
+    }
+    // confetti end
 
     //testing start
     // $(window).scroll(function() {
