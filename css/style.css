@@ -1060,3 +1060,52 @@ ul li .date {
 }
 
 /* timeline end */
+
+/* certificate start */
+.pointer {
+  cursor: pointer;
+}
+
+.certificate-heading {
+  color: #64b5f6;
+  text-align: center;
+  font-size: larger;
+}
+
+.certificate-heading::after {
+  position: absolute;
+  content: " ";
+  width: 35%;
+  height: 2px;
+  left: 50%;
+  bottom: 20px;
+  background-color: #64b5f6;
+  transform: translateX(-50%);
+}
+
+.cert-img {
+  position: relative;
+}
+
+.cert-badge {
+  position: absolute;
+  left: -18px;
+  top: -18px;
+  width: 50px;
+  height: auto;
+  transform: rotate(-15deg);
+}
+
+.cert {
+  justify-content: center;
+}
+
+.cert-img > a > img {
+  transition: 1s;
+}
+
+.cert-img > a > img:hover {
+  filter: blur(2px);
+  transform: scale(1.1);
+}
+/* certificate end */
