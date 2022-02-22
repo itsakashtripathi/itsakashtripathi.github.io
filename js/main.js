@@ -167,6 +167,29 @@ progress_bar.forEach(bar => {
         // selector.classList.add('magictime', 'swap-back');
     });
 
+/* SCROLL SECTIONS ACTIVE NAV LINK START */
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', scrollActive);
+
+function scrollActive() {
+    const scrollY = window.pageYOffset;
+
+    sections.forEach( current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id');
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            // document.querySelector('.navbar-nav a[href*=' + sectionId + ']').classList.add('active');
+            $('.navbar-nav a[href*=' + sectionId + ']').parent().addClass('active').siblings().removeClass('active');
+        }else{
+            // document.querySelector('.navbar-nav a[href*=' + sectionId + ']').classList.remove('active');
+            $('.navbar-nav a[href*=' + sectionId + ']').siblings().removeClass('active');
+        }
+    })
+}
+/* SCROLL SECTIONS ACTIVE NAV LINK END */
+
 // NOTE: This code should always stay at the end of file
 // confetti start
 var confettiSettings = { target: 'my-canvas' };
