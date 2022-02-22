@@ -76,7 +76,8 @@ hidePreloader();
 
 // disable shortcuts start
 document.onkeydown = function(e) {
-    if(event.keyCode == 123) {return false;}if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){return false;}if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){return false;}if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){return false;}if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){return false;}if(e.ctrlKey && e.keyCode == 'P'.charCodeAt(0)){return false;}if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){return false;}if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){return false;}if(e.ctrlKey && e.keyCode == 'G'.charCodeAt(0)){return false;}if(e.ctrlKey && e.keyCode == 'C'.charCodeAt(0)){return false;}if(e.ctrlKey && e.keyCode == 'V'.charCodeAt(0)){return false;}}
+    if(event.keyCode == 123) {return false;}if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){return false;}if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){return false;}if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){return false;}if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){return false;}if(e.ctrlKey && e.keyCode == 'P'.charCodeAt(0)){return false;}if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){return false;}if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){return false;}if(e.ctrlKey && e.keyCode == 'G'.charCodeAt(0)){return false;}if(e.ctrlKey && e.keyCode == 'C'.charCodeAt(0)){return false;}if(e.ctrlKey && e.keyCode == 'V'.charCodeAt(0)){return false;}
+}
 // disable shortcuts end
 
 // disable right click start
@@ -165,19 +166,20 @@ progress_bar.forEach(bar => {
         selector.classList.remove('magictime', 'swap');
         // selector.classList.add('magictime', 'swap-back');
     });
-    
-    // confetti start
-    var confettiSettings = { target: 'my-canvas' };
-    var confetti = new ConfettiGenerator(confettiSettings);
-    confetti.render();
 
-    let confe = document.querySelector("#my-canvas");
-    let hireMeBtn = document.querySelector(".hire-btn");
-    hireMeBtn.onclick = function () {
-        confe.classList.add('active');
-        setTimeout(() => {confe.classList.remove('active');}, 10000);
-    }
-    // confetti end
+// NOTE: This code should always stay at the end of file
+// confetti start
+var confettiSettings = { target: 'my-canvas' };
+var confetti = new ConfettiGenerator(confettiSettings);
+confetti.render();
+
+let confe = document.querySelector("#my-canvas");
+let hireMeBtn = document.querySelector(".hire-btn");
+hireMeBtn.onclick = function () {
+    confe.classList.add('active');
+    setTimeout(() => {confe.classList.remove('active');}, 10000);
+}
+// confetti end
 
     //testing start
     // $(window).scroll(function() {
@@ -194,4 +196,5 @@ progress_bar.forEach(bar => {
     //     }
     // });
     //testing end
+
 // animation end
