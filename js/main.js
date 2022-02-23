@@ -190,6 +190,56 @@ function scrollActive() {
 }
 /* SCROLL SECTIONS ACTIVE NAV LINK END */
 
+// scroll-reveal start
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+})
+
+/*SCROLL HOME*/
+sr.reveal('.sr_navbar', {})
+sr.reveal('.sr_title_text', {})
+sr.reveal('.sr_site_buttons', {delay: 200})
+sr.reveal('.sr_banner_image', {origin:'right', delay: 400})
+
+/*SCROLL ABOUT*/
+sr.reveal('.sr_about_image', {origin:'left', delay: 500})
+sr.reveal('.sr_about_subtitle', {delay: 300})
+sr.reveal('.sr_para', {origin:'right', delay: 400})
+
+/*SCROLL EXPERIENCE*/
+sr.reveal('.sr_single_brand', {interval: 200})
+
+/*SCROLL TIMELINE*/
+sr.reveal('.sr_avatar_container', {origin:'left', delay: 500})
+sr.reveal('.sr_avatar_text', {origin:'top', delay: 200})
+sr.reveal('.sr_timeline_heading', {delay: 300})
+sr.reveal('.sr_timeline_item', {delay: 300})
+sr.reveal('.sr_item_left', {origin:'left', delay: 300})
+sr.reveal('.sr_item_right', {origin:'right', delay: 300})
+
+/*SCROLL AWARDS*/
+
+
+/*SCROLL PROJECTS*/
+
+
+/*SCROLL SKILLS*/
+sr.reveal('.sr_skills_subtitle', {})
+sr.reveal('.sr_skills_item', {distance: '20px', delay: 50, interval: 100})
+
+/*SCROLL TESTIMONIAL*/
+
+/*SCROLL CONTACT*/
+sr.reveal('.contact__text', {interval: 200})
+sr.reveal('.contact__input', {delay: 400})
+sr.reveal('.contact__button', {delay: 600})
+
+// scroll-reveal end
+
 // NOTE: This code should always stay at the end of file
 // confetti start
 var confettiSettings = { target: 'my-canvas' };
@@ -204,20 +254,20 @@ hireMeBtn.onclick = function () {
 }
 // confetti end
 
-    //testing start
-    // $(window).scroll(function() {
-    //     var top_of_element = $(".brand-area").offset().top;
-    //     var bottom_of_element = $(".brand-area").offset().top + $(".brand-area").outerHeight();
-    //     var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-    //     var top_of_screen = $(window).scrollTop();
-    
-    //     if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-    //         // the element is visible, do something
-    //         console.log('hi')
-    //     } else {
-    //         // the element is not visible, do something else
-    //     }
-    // });
-    //testing end
+//testing start
+// $(window).scroll(function() {
+//     var top_of_element = $(".brand-area").offset().top;
+//     var bottom_of_element = $(".brand-area").offset().top + $(".brand-area").outerHeight();
+//     var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+//     var top_of_screen = $(window).scrollTop();
+
+//     if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+//         // the element is visible, do something
+//         console.log('hi')
+//     } else {
+//         // the element is not visible, do something else
+//     }
+// });
+//testing end
 
 // animation end

@@ -19,6 +19,10 @@ body {
   /* position: relative !important; */
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* CSS Variables */
 
 :root {
