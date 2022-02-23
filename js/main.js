@@ -203,12 +203,12 @@ const sr = ScrollReveal({
 sr.reveal('.sr_navbar', {})
 sr.reveal('.sr_title_text', {})
 sr.reveal('.sr_site_buttons', {delay: 200})
-sr.reveal('.sr_banner_image', {origin:'right', delay: 400})
+sr.reveal('.sr_banner_image', {origin:'top', delay: 400})
 
 /*SCROLL ABOUT*/
 sr.reveal('.sr_about_image', {origin:'left', delay: 500})
 sr.reveal('.sr_about_subtitle', {delay: 300})
-sr.reveal('.sr_para', {origin:'right', delay: 400})
+sr.reveal('.sr_para', {origin:'top', delay: 400})
 
 /*SCROLL EXPERIENCE*/
 sr.reveal('.sr_single_brand', {interval: 200})
@@ -219,7 +219,7 @@ sr.reveal('.sr_avatar_text', {origin:'top', delay: 200})
 sr.reveal('.sr_timeline_heading', {delay: 300})
 sr.reveal('.sr_timeline_item', {delay: 300})
 sr.reveal('.sr_item_left', {origin:'left', delay: 300})
-sr.reveal('.sr_item_right', {origin:'right', delay: 300})
+sr.reveal('.sr_item_top', {origin:'top', delay: 300})
 
 /*SCROLL AWARDS*/
 
@@ -234,9 +234,9 @@ sr.reveal('.sr_skills_item', {distance: '20px', delay: 50, interval: 100})
 /*SCROLL TESTIMONIAL*/
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact__text', {interval: 200})
-sr.reveal('.contact__input', {delay: 400})
-sr.reveal('.contact__button', {delay: 600})
+// sr.reveal('.contact__text', {interval: 200})
+// sr.reveal('.contact__input', {delay: 400})
+// sr.reveal('.contact__button', {delay: 600})
 
 // scroll-reveal end
 
