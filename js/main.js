@@ -228,8 +228,8 @@ sr.reveal('.sr_item_top', {origin:'top', delay: 300})
 
 
 /*SCROLL SKILLS*/
-sr.reveal('.sr_skills_subtitle', {})
-sr.reveal('.sr_skills_item', {distance: '20px', delay: 50, interval: 100})
+// sr.reveal('.sr_skills_subtitle', {})
+// sr.reveal('.sr_skills_item', {distance: '20px', delay: 50, interval: 100})
 
 /*SCROLL TESTIMONIAL*/
 
