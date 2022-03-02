@@ -79,6 +79,14 @@
 /* responsive start */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .border-right {
+    border: 0 !important;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
   .title-text {
     font: normal bold 30px/ 50px var(--roboto);
   }

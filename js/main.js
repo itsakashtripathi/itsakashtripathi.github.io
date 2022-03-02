@@ -219,6 +219,7 @@ sr.reveal('.sr_avatar_text', {origin:'top', delay: 200})
 sr.reveal('.sr_timeline_heading', {delay: 300})
 sr.reveal('.sr_timeline_item', {delay: 300})
 sr.reveal('.sr_item_left', {origin:'left', delay: 300})
+sr.reveal('.sr_item_right', {origin:'right', delay: 300})
 sr.reveal('.sr_item_top', {origin:'top', delay: 300})
 
 /*SCROLL AWARDS*/
