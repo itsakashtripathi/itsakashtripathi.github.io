@@ -1133,3 +1133,13 @@ ul li .date {
   align-items: baseline;
 }
 /* skills end */
+
+/* contact start */
+.social > a {
+  text-decoration: none !important;
+}
+
+.copyrights > a:hover {
+  text-decoration: none !important;
+}
+/* contact end */
