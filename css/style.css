@@ -536,6 +536,7 @@ footer.footer-area .social a:hover > i {
   bottom: 0;
   background-color: rgb(255, 255, 255);
   z-index: 999999;
+  left: -3rem;
 }
 
 .lds-ripple {
