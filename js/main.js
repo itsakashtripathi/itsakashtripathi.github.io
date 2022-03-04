@@ -248,8 +248,22 @@ var confetti = new ConfettiGenerator(confettiSettings);
 confetti.render();
 
 let confe = document.querySelector("#my-canvas");
-let hireMeBtn = document.querySelector(".hire-btn");
-hireMeBtn.onclick = function () {
+
+let hireMeBtn1 = document.querySelector(".hire-btn");
+let hireMeBtn2 = document.querySelector(".hire-btn-2");
+let hireMeBtn3 = document.querySelector(".hire-btn-3");
+
+hireMeBtn1.onclick = function () {
+    confe.classList.add('active');
+    setTimeout(() => {confe.classList.remove('active');}, 10000);
+}
+
+hireMeBtn2.onclick = function () {
+    confe.classList.add('active');
+    setTimeout(() => {confe.classList.remove('active');}, 10000);
+}
+
+hireMeBtn3.onclick = function () {
     confe.classList.add('active');
     setTimeout(() => {confe.classList.remove('active');}, 10000);
 }

@@ -1143,3 +1143,8 @@ ul li .date {
   text-decoration: none !important;
 }
 /* contact end */
+
+.hire-btn-3:hover {
+  /* text-decoration: none; */
+  color: #64b5f6;
+}
