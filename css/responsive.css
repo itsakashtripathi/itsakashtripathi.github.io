@@ -101,7 +101,8 @@
 
   /* .brand-btn, */
   .banner-image,
-  .about-image {
+  .about-image,
+  .empty-brand {
     display: none;
   }
 
