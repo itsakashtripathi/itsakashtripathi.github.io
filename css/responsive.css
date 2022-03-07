@@ -106,6 +106,12 @@
     display: none;
   }
 
+  .avatar-c > .row {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
   .card-bg,
   .card-bg + .py-5,
   .card-bg + .px-5,

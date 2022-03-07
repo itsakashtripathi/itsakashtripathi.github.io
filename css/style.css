@@ -982,7 +982,7 @@ ul li a {
 ul li .date {
   position: absolute;
   top: -48px;
-  width: 170px;
+  /* width: 170px; */
   height: 35px;
   border-radius: 20px;
   color: #64b5f6;
@@ -994,11 +994,11 @@ ul li .date {
 }
 
 .timeline-container ul li:nth-child(odd) .date {
-  right: 5px;
+  right: 20px;
 }
 
 .timeline-container ul li:nth-child(even) .date {
-  left: 5px;
+  left: 20px;
 }
 
 .timeline-container ul li .circle {
@@ -1060,10 +1060,11 @@ ul li .date {
     text-align: left;
   }
   .timeline-container ul li:nth-child(odd) .date {
-    left: 0;
+    /* left: 0; */
+    right: unset;
   }
   .timeline-container ul li:nth-child(even) .date {
-    left: 0;
+    /* left: 0; */
   }
   .timeline-container ul li:nth-child(odd) .circle {
     left: -30px;
