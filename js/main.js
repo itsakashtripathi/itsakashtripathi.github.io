@@ -42,6 +42,17 @@ $(document).ready(function () {
         }
     })
 
+    // isotope layout bugfix start
+    var $grid = $('.grid').imagesLoaded( function() {
+        // init Isotope after all images have loaded
+        $grid.isotope({
+        // options...
+        });
+    });
+    // isotope layout bugfix end
+    // solution
+    // https://isotope.metafizzy.co/layout#imagesloaded
+
     // sticky navigation menu
 
     // let nav_offset_top = $('.header_area').height() + 50;

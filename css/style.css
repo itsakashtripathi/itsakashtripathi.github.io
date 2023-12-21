@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
 /* CSS Variables */
 
 :root {
-  --primary-color: #4458dc;
+  --primary-color: #28a745;
   --primary-color2: #854fee;
   --title-color: #141313;
   --text-color: #777777;
@@ -70,8 +70,12 @@ body::-webkit-scrollbar {
   border-radius: 4px;
 }
 
+.primary-color {
+  color: var(--primary-color);
+}
+
 .button.primary-button {
-  background: var(--gradient-color);
+  background: var(--primary-color);
   background-clip: padding-box;
   color: whitesmoke;
   transition: background 0.6s ease;
@@ -91,7 +95,7 @@ body::-webkit-scrollbar {
   left: -2px;
   bottom: -2px;
   right: -2px;
-  background: var(--gradient-color);
+  background: var(--primary-color);
   content: " ";
   z-index: -1;
   border-radius: 4px;
@@ -104,7 +108,7 @@ body::-webkit-scrollbar {
 }
 
 .button.secondary-button:hover {
-  background: var(--gradient-color);
+  background: var(--primary-color);
   color: whitesmoke;
   box-shadow: var(--box-shadow);
 }
@@ -171,7 +175,7 @@ body {
 .header_area .main-menu .navbar-nav .active a {
   /* background: var(--gradient-color); */
   /* background: #51b05e; */
-  background: #4857dd;
+  background: var(--primary-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -180,7 +184,7 @@ body {
 .header_area .main-menu .navbar-nav a:hover {
   /* background: var(--gradient-color); */
   /* background: #51b05e; */
-  background: #4857dd;
+  background: var(--primary-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -211,7 +215,7 @@ nav > a > span {
 /* Banner Area */
 
 .site-main .site-banner {
-  background: url(../img/banner/home-banner2.png) no-repeat 0% 50%;
+  background: url(../img/banner/home-banner2.jpg) no-repeat 0% 50%;
 }
 
 .site-main .site-banner .site-title h3 {
@@ -247,7 +251,7 @@ nav > a > span {
 /* Start About Area */
 
 .site-main .about-area {
-  padding: 8rem 5rem;
+  padding: 8rem 5rem !important;
 }
 
 .site-main .about-area .about-title h2 > span {
@@ -265,7 +269,7 @@ nav > a > span {
 /* Start Brand Area */
 
 .site-main .brand-area {
-  padding: 1rem 20rem;
+  padding: 8rem 4rem !important;
   margin-bottom: 4rem;
 }
 
@@ -507,7 +511,7 @@ nav > a > span {
 
 footer.footer-area {
   padding: 5rem 0;
-  background: url(../img/footer-bg.png) no-repeat;
+  background: url(../img/footer-bg.svg) no-repeat;
 }
 
 footer.footer-area .social h5 {
@@ -515,13 +519,13 @@ footer.footer-area .social h5 {
 }
 
 footer.footer-area .social a > i {
-  font-size: 22px;
+  font-size: 1.2rem;
   padding: 2rem;
-  color: var(--border-color);
+  color: var(--primary-color);
 }
 
 footer.footer-area .social a:hover > i {
-  color: var(--primary-color);
+  color: #fff;
 }
 
 /* End Footer */
@@ -618,7 +622,7 @@ footer.footer-area .social a:hover > i {
 
 /* card container start */
 .card-container {
-  box-shadow: 0 0 0 0.6em #d5ecd9;
+  /* box-shadow: 0 0 0 0.6em #d5ecd9; */
   background-color: #fff;
   border-radius: 10px;
 }
@@ -667,7 +671,7 @@ footer.footer-area .social a:hover > i {
   height: 35px;
   width: 35px;
   margin-top: -10px;
-  background-color: #4857dd21;
+  background-color: #e9ecef;
   border-radius: 6px;
   box-shadow: rgb(0 0 0 / 10%) 10px 5px 20px 0em;
   border: 2px solid white;
@@ -710,7 +714,7 @@ footer.footer-area .social a:hover > i {
 
 .progress {
   /* background: #54b862; */
-  background: #4857dd;
+  background: var(--primary-color);
   height: 1px;
   width: 0;
   transition: width 0.01s ease-in;
@@ -777,7 +781,7 @@ footer.footer-area .social a:hover > i {
 }
 
 .btn-grp-btn-active {
-  background-color: #54b862 !important;
+  background-color: var(--primary-color) !important;
   color: white;
   /* padding: 5px; */
   border-radius: 5px;
@@ -889,7 +893,7 @@ footer.footer-area .social a:hover > i {
 }
 
 .main .timeline-heading {
-  color: #64b5f6;
+  color: var(--primary-color);
   position: relative;
   margin-bottom: 100px;
 }
@@ -901,7 +905,7 @@ footer.footer-area .social a:hover > i {
   height: 2px;
   left: 50%;
   bottom: -5px;
-  background-color: #64b5f6;
+  background-color: var(--primary-color);
   transform: translateX(-50%);
 }
 
@@ -918,7 +922,7 @@ footer.footer-area .social a:hover > i {
   height: 100%;
   top: -60px;
   border-radius: 10px;
-  background-color: #e3f2fd;
+  background-color: #28a74521;
 }
 
 .timeline-container ul {
@@ -955,7 +959,7 @@ footer.footer-area .social a:hover > i {
 
 .timeline-container ul li .title {
   font-size: 14px;
-  color: #64b5f6;
+  color: var(--primary-color);
 }
 
 ul li p {
@@ -985,7 +989,7 @@ ul li .date {
   /* width: 170px; */
   height: 35px;
   border-radius: 20px;
-  color: #64b5f6;
+  color: #17a2b8;
   background-color: white;
   display: grid;
   place-items: center;
@@ -1004,7 +1008,7 @@ ul li .date {
 .timeline-container ul li .circle {
   width: 30px;
   height: 30px;
-  background-color: #e3f2fd;
+  background-color: #28a74540;
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -1015,7 +1019,7 @@ ul li .date {
   content: " ";
   width: 15px;
   height: 15px;
-  background-color: #64b5f6;
+  background-color: #28a74585;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -1083,7 +1087,7 @@ ul li .date {
 }
 
 .certificate-heading {
-  color: #64b5f6;
+  color: var(--primary-color);
   text-align: center;
   font-size: larger;
 }
@@ -1095,7 +1099,7 @@ ul li .date {
   height: 2px;
   left: 50%;
   bottom: 0.25rem;
-  background-color: #64b5f6;
+  background-color: var(--primary-color);
   transform: translateX(-50%);
 }
 

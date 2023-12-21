@@ -96,7 +96,15 @@
   }
 
   .site-main .site-banner .site-title h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .site-main .about-area {
+    padding: 0 !important;
+  }
+
+  .site-main .brand-area {
+    padding: 0 !important;
   }
 
   /* .brand-btn, */
